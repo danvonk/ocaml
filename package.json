@@ -1,13 +1,13 @@
 {
   "name": "ocaml",
-  "version": "4.10.2000",
+  "version": "4.10.2000-afl",
   "description": "OCaml Compiler as an esy npm Package",
   "versionNotes": [
     "See the README for notes about how the version of this package corresponds to the official OCaml compiler version."
   ],
   "esy": {
     "build": [
-      "./esy-configure --prefix $cur__install",
+      "./esy-configure -with-afl --prefix $cur__install",
       "./esy-build"
     ],
     "buildsInSource": true,
