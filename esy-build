@@ -14,6 +14,10 @@ case "$(uname -s)" in
         make -j4 world.opt
         make flexlink.opt
         ;;
+    FreeBSD)
+        echo "[esy-build] Detected FreeBSD environment"
+        gmake -j4 world.opt
+        ;;
     *)
         echo "[esy-build] Detected OSX / Linux environment"
         make -j4 world.opt
