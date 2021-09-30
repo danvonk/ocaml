@@ -8,9 +8,9 @@ if [ -d "flexdll" ] && [ -f "flexdll/flexdll.c" ]; then
     echo "[Flexdll] Already present, no need to clone."
 else
     echo "[Flexdll] Cloning..."
-    git clone https://github.com/esy-ocaml/flexdll.git
+    git clone https://github.com/alainfrisch/flexdll
     cd flexdll
-    git checkout b6b231493387a7628103dc744b3bcd3d413c80d9
+    git checkout 0.39
     cd ..
     echo "[Flexdll] Clone successful!"
 fi
